@@ -1,0 +1,14 @@
+.navbar-brand img{
+    width: 8vw;
+    height: 8vh;
+}
+header svg.top-curve, footer svg.bottom-curve{
+    width: 100vw;
+    height: 5.775rem;
+    color: rgb(108,117,125);
+}
+.pie{
+    background-color: rgb(108,117,125);
+}
+
+/* Stylo para animacion de letras */
