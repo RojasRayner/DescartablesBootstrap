@@ -1,14 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 .navbar-brand img{
     width: 8vw;
     height: 8vh;
 }
+.promociones{
+    background: linear-gradient(90deg, #805e43 0%, #987957 12%, #b1966d 24%, #e0d39c 48%, #d1bf8c 61%, #c1ab7d 74%, #a18560 100%, rgba(173, 125, 81, 0.75) 100%, rgba(189, 114, 65, 0.5) 100%, rgba(255, 0, 0, 0) 100%);
+}
 header svg.top-curve, footer svg.bottom-curve{
     width: 100vw;
     height: 5.775rem;
-    color: rgb(108,117,125);
-}
+} 
 .pie{
-    background-color: rgb(108,117,125);
+    background: linear-gradient(90deg, #805e43 0%, #987957 12%, #b1966d 24%, #e0d39c 48%, #d1bf8c 61%, #c1ab7d 74%, #a18560 100%, rgba(173, 125, 81, 0.75) 100%, rgba(189, 114, 65, 0.5) 100%, rgba(255, 0, 0, 0) 100%);
 }
-
+a{
+    font-family: 'Rye', cursive;
+}
+div.carousel-item img{
+    width: 45vw;
+    height: 35vh;
+}
+body{
+    background-color: #646F90;
+}
 /* Stylo para animacion de letras */
