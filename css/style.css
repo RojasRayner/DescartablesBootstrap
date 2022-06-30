@@ -1,26 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 .navbar-brand img{
-    width: 8vw;
-    height: 8vh;
+    width: 7vw;
+    height: 7vh;
+}
+body{
+    background-color:rgb(255, 255, 255);
 }
 .promociones{
     background: linear-gradient(90deg, #805e43 0%, #987957 12%, #b1966d 24%, #e0d39c 48%, #d1bf8c 61%, #c1ab7d 74%, #a18560 100%, rgba(173, 125, 81, 0.75) 100%, rgba(189, 114, 65, 0.5) 100%, rgba(255, 0, 0, 0) 100%);
 }
+.color-inicio{
+    color:orangered;
+    font-family: 'Black Ops One', cursive;
+}
+.color-final{
+    color:blue;
+    font-family: 'Black Ops One', cursive;
+}
 header svg.top-curve, footer svg.bottom-curve{
     width: 100vw;
-    height: 5.775rem;
+    height: 6.775rem;
 } 
 .pie{
     background: linear-gradient(90deg, #805e43 0%, #987957 12%, #b1966d 24%, #e0d39c 48%, #d1bf8c 61%, #c1ab7d 74%, #a18560 100%, rgba(173, 125, 81, 0.75) 100%, rgba(189, 114, 65, 0.5) 100%, rgba(255, 0, 0, 0) 100%);
 }
-a{
-    font-family: 'Rye', cursive;
+ul.navbar-nav li a, a.nav-link{
+    font-family: 'Black Ops One', cursive;
+    color: blue;
 }
-div.carousel-item img{
+ul.navbar-nav li a:hover,  a.nav-link:hover{
+    -webkit-text-decoration: underline;
+            text-decoration: underline;
+}
+div.carousel-item img, div.card img, div.card img{
     width: 45vw;
     height: 35vh;
 }
-body{
-    background-color: #646F90;
+.color-fondo{
+    background-color: #0000ff;
 }
-/* Stylo para animacion de letras */
+/* conocenos.html */
+
+
+/* Galeria.html */
+.card-button{
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #0000ff;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+.card:hover{
+    border-color: #0000ff;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+   
+.card:hover .card-button{
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+/* comprar.html */
+a.btn:hover, button.btn:hover{
+    background-color: orangered;
+}
