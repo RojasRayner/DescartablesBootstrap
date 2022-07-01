@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 .navbar-brand img{
-    width: 7vw;
-    height: 7vh;
+    width: 15vw;
+    height: 15vh;
 }
 body{
     background-color:rgb(255, 255, 255);
@@ -37,6 +37,9 @@ div.carousel-item img, div.card img, div.card img{
     background-color: #0000ff;
 }
 /* Galeria.html */
+.card{
+    border-radius: .5rem 0 2rem;
+}
 .card-button{
     transform: translate(-50%, 125%);
     width: 60%;
@@ -64,3 +67,88 @@ div.carousel-item img, div.card img, div.card img{
 a.btn:hover, button.btn:hover{
     background-color: #ff4500;
 }
+/* animacion comunicate con nosotros */
+.animacion-de-texto{
+    width: 100vw;
+    transform: translateX(100%);
+    -webkit-animation: desplazamiento 20s linear  infinite;
+    animation: desplazamiento 20s linear  infinite;
+}
+@-webkit-keyframes desplazamiento{
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+@keyframes desplazamiento{
+    from {
+      transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -o-transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+/* Animaciones bottones */
+.movimiento-button:hover{
+    animation: movimiento 0.3s linear infinite both;
+    -webkit-animation: movimiento 0.3s linear infinite both;
+}
+   
+   @-webkit-keyframes movimiento {
+    0% {
+     transform: translate(0);
+    }
+   
+    20% {
+     transform: translate(-2px, 2px);
+    }
+   
+    40% {
+     transform: translate(-2px, -2px);
+    }
+   
+    60% {
+     transform: translate(2px, 2px);
+    }
+   
+    80% {
+     transform: translate(2px, -2px);
+    }
+   
+    100% {
+     transform: translate(0);
+    }
+   }
+   
+   @keyframes movimiento {
+    0% {
+     transform: translate(0);
+    }
+   
+    20% {
+     transform: translate(-2px, 2px);
+    }
+   
+    40% {
+     transform: translate(-2px, -2px);
+    }
+   
+    60% {
+     transform: translate(2px, 2px);
+    }
+   
+    80% {
+     transform: translate(2px, -2px);
+    }
+   
+    100% {
+     transform: translate(0);
+    }
+   }
+   
