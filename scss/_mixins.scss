@@ -1,0 +1,9 @@
+/* mixins */
+@mixin size__image($width,$height) {
+    width: $width;
+    height: $height;
+}
+@mixin color__font($color,$font) {
+    color: $color;
+    font-family: $font;
+}

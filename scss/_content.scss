@@ -1,0 +1,118 @@
+.navbar-brand{
+    img{
+        @include size__image(15vw,15vh);
+    }
+}
+ul.navbar-nav{
+    li{
+        a{
+            @extend a.nav-link;
+        }
+    }
+}
+body{
+    background-color:$background;
+}
+.color-de-fondo{
+    background: $background__menus;
+}
+.color-inicio{
+    @include color__font($color__logo--inicial,$font__main);
+}
+.color-final{
+    @include color__font($color__logo--final,$font__main);
+}
+/* colocarlo en otro parcial svg decoracion */
+header svg.top-curve, footer svg.bottom-curve{
+    @include size__image(100vw,6.775rem);
+}
+
+/* estylo para carousel */
+div.carousel-item, div.card{
+    img{
+        @include size__image(45vw,35vh);
+    }
+}
+
+.color-fondo{
+    background-color: $color__logo--final;
+}
+/* Galeria.html */
+.card{
+    border-radius: .5rem 0 2rem;
+    &:hover{
+        border-color: $color__logo--final;
+        box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        .card-button{
+            transform: translate(-50%, 50%);
+            opacity: 1;
+        }
+    }
+}
+.card-button{
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: $color__logo--final;
+    color: $color__texto--white;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+
+}
+/* comprar.html */
+a.btn:hover, button.btn:hover{
+    background-color: $color__logo--inicial;
+    cursor: pointer;
+}
+/* animacion comunicate con nosotros */
+.animacion-de-texto{
+    width: 100vw;
+    transform: translateX(100%);
+    -webkit-animation: desplazamiento 20s linear  infinite;
+    animation: desplazamiento 20s linear  infinite;
+}
+@keyframes desplazamiento{
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+/* Animaciones bottones */
+.movimiento-button:hover{
+    animation: movimiento 0.3s linear infinite both;
+    cursor: pointer;
+} 
+@keyframes movimiento {
+    0% {
+     transform: translate(0);
+    }
+   
+    20% {
+     transform: translate(-2px, 2px);
+    }
+   
+    40% {
+     transform: translate(-2px, -2px);
+    }
+   
+    60% {
+     transform: translate(2px, 2px);
+    }
+   
+    80% {
+     transform: translate(2px, -2px);
+    }
+   
+    100% {
+     transform: translate(0);
+    }
+}

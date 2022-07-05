@@ -1,0 +1,9 @@
+/* enlaces en header y footer */
+a.nav-link{
+    font-family: $font__main;
+    color:$color__logo--final;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
