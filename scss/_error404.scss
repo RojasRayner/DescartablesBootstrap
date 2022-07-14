@@ -1,0 +1,100 @@
+/* map y map-get del error404.html */
+$color:(
+    'cajaUno':#145DA0,
+    'cajaDos':#0C2D48,
+    'cajaTres':#2E8BC0,
+    'cajaCuatro':#B1D4E0,
+    'cajaCinco':#89CFF0,
+    'cajaSeis':#AC8E69,
+    'black':#35454C,
+);
+/* style para pagina en error404.html */
+#cajaMadre{
+    margin: 0;
+    padding: 0;
+}
+.cajaUno{
+    width: 100vw;
+    height: 100vh;
+    background-color: map-get($map:$color , $key:'cajaUno');
+    position: absolute;
+}
+.cajaDos{
+    width: 80vw;
+    height: 80vh;
+    background-color: map-get($map: $color, $key:'cajaDos');
+    z-index: 2;
+    position: relative;
+    margin: 10vh 10vw;
+    overflow-y: visible;
+}
+.cajaTres{
+    width: 60vw;
+    height: 60vh;
+    background-color: map-get($map: $color, $key:'cajaTres');
+    z-index: 3;
+    position: absolute;
+    margin: 10vh 10vw;
+    overflow-y: visible;
+}
+.cajaCuatro{
+    width: 10vw;
+    height: 100vh;
+    background-color: map-get($map: $color, $key:'cajaCuatro');
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    margin-left: 10vw;
+
+}
+.cajaCinco{
+    width: 35vw;
+    height: 50vh;
+    background-color: map-get($map: $color, $key:'cajaCinco');
+    z-index: 5;
+    position: relative;
+    left: 12vw;
+    margin: 25vh auto;
+}
+.cajaPrincipal{
+    width: 25vw;
+    height: 40vh;
+    margin: 5vh 5vw;
+    position: absolute;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($map: $color, $key:'cajaSeis');
+    p,h1,h2{
+        color: map-get($map: $color, $key:'black');
+        text-align: center;
+        font-size: x-small;
+    }
+    a{
+        text-decoration: none;
+        color: map-get($map: $color, $key:'cajaUno');
+        font-size: x-small;
+        text-align: center;
+        &:hover{
+            text-decoration: underline;
+            color: map-get($map: $color, $key:'black');
+        }
+    }
+}
+@media only screen and (min-width: 768px)  {
+    .cajaPrincipal{
+        p,h1,h2,a{
+            font-size:medium
+        }
+    }
+}
+@media only screen and (min-width:1020px){
+    .cajaPrincipal{
+        p,h1,h2,a{
+            font-size: x-large;
+        }
+    }
+    
+}
