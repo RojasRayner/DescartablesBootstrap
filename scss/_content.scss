@@ -22,8 +22,13 @@ body{
 .color-final{
     @include color__font($color__logo--final,$font__main);
 }
-/* colocarlo en otro parcial svg decoracion */
-header svg.top-curve, footer svg.bottom-curve{
+/* para la union del sombra svg, junto con el header y footer */
+.top-curve{
+    transform: translateY(-4px);
+    @include size__image(100vw,6.775rem);
+}
+.bottom-curve{
+    transform: translateY(4px);
     @include size__image(100vw,6.775rem);
 }
 
@@ -33,7 +38,6 @@ div.carousel-item, div.card{
         @include size__image(45vw,35vh);
     }
 }
-
 .color-fondo{
     background-color: $color__logo--final;
 }

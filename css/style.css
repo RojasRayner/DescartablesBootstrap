@@ -29,8 +29,14 @@ body {
   color: #0000ff;
   font-family: "Black Ops One", cursive; }
 
-/* colocarlo en otro parcial svg decoracion */
-header svg.top-curve, footer svg.bottom-curve {
+/* para la union del sombra svg, junto con el header y footer */
+.top-curve {
+  transform: translateY(-4px);
+  width: 100vw;
+  height: 6.775rem; }
+
+.bottom-curve {
+  transform: translateY(4px);
   width: 100vw;
   height: 6.775rem; }
 
