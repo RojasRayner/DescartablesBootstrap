@@ -24,22 +24,27 @@ body{
 }
 /* para la union del sombra svg, junto con el header y footer */
 .top-curve{
-    transform: translateY(-4px);
+    transform: translateY(-8px);
     @include size__image(100vw,6.775rem);
 }
 .bottom-curve{
-    transform: translateY(4px);
+    transform: translateY(90px);
     @include size__image(100vw,6.775rem);
 }
 
 /* estylo para carousel */
-div.carousel-item, div.card{
+div.carousel-item{
     img{
         @include size__image(45vw,35vh);
     }
 }
 .color-fondo{
     background-color: $color__logo--final;
+}
+/* comprar.html */
+a.btn:hover, button.btn:hover{
+    background-color: $color__logo--inicial;
+    cursor: pointer;
 }
 /* Galeria.html */
 .card{
@@ -70,10 +75,50 @@ div.carousel-item, div.card{
     transition: 0.3s ease-out;
 
 }
-/* comprar.html */
-a.btn:hover, button.btn:hover{
-    background-color: $color__logo--inicial;
-    cursor: pointer;
+/* imagen en galeria */
+.card-imagen{
+    width: 48vw;
+    height: auto;
+}
+@media only screen and (min-width: 280px) {
+    .card-imagen{
+        width: 45vw;
+    }
+    .bottom-curve{
+        transform: translateY(82px);
+    }
+}
+@media only screen and (min-width: 480px) {
+    .card-imagen{
+        width: 30vw;
+    }
+    .bottom-curve{
+        transform: translateY(58px);
+    }
+}
+@media only screen and (min-width: 680px) {
+    .card-imagen{
+        width: 25vw;
+    }
+    .bottom-curve{
+        transform: translateY(37px);
+    }
+}
+@media only screen and (min-width: 880px) {
+    .card-imagen{
+        width: 20vw;
+    }
+    .bottom-curve{
+        transform: translateY(16px);
+    }
+}
+@media only screen and (min-width: 1080px) {
+    .card-imagen{
+        width: 15vw;
+    }
+    .bottom-curve{
+        transform: translateY(6px);
+    }
 }
 /* animacion comunicate con nosotros */
 .animacion-de-texto{
