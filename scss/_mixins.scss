@@ -1,9 +1,22 @@
 /* mixins */
+/* mixin para size de la imagen */
 @mixin size__image($width,$height) {
     width: $width;
     height: $height;
 }
+/* mixin para color y font famili */
 @mixin color__font($color,$font) {
     color: $color;
     font-family: $font;
+}
+/* mixin que ayuda a crear un breackpoint min-width dependiendo del porcentaje suministrado . */
+@mixin media-breakpoint-min($porcentaje) {
+    $min: $porcentaje;
+    @if $min {
+      @media (min-width: $min) {
+        @content;
+      }
+    } @else {
+      @content;
+    }
 }

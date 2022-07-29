@@ -33,11 +33,6 @@ body{
 }
 
 /* estylo para carousel */
-div.carousel-item{
-    img{
-        @include size__image(45vw,35vh);
-    }
-}
 .color-fondo{
     background-color: $color__logo--final;
 }
@@ -77,8 +72,7 @@ a.btn:hover, button.btn:hover{
 }
 /* imagen en galeria */
 .card-imagen{
-    width: 48vw;
-    height: auto;
+    @include size__image(48vw,auto);
 }
 @media only screen and (min-width: 280px) {
     .card-imagen{
@@ -106,7 +100,7 @@ a.btn:hover, button.btn:hover{
 }
 @media only screen and (min-width: 880px) {
     .card-imagen{
-        width: 20vw;
+        width: 18vw;
     }
     .bottom-curve{
         transform: translateY(16px);
@@ -163,5 +157,18 @@ a.btn:hover, button.btn:hover{
    
     100% {
      transform: translate(0);
+    }
+}
+/* creacion de clases de width y height responsive para bootstrap. Este loop crea clases .w y .h para bootstrap para poder usar de forma responsive. Por ejemplo se puede utilizar la clase w-md-25. por lo tanto el width sera del 25% en el breakpoint de >= 768px */
+@each $nombre, $porcentaje in $grid-breakpoints {
+    @include media-breakpoint-min($porcentaje) {
+        $infix: breakpoint-key($nombre);
+        @each $prop, $abbrev in $medidas {
+            @each $size, $length in $sizes {
+                .#{$abbrev}#{$infix}-#{$size} { 
+                    #{$prop}: $length !important;
+                }
+            }
+        }
     }
 }
