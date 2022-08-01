@@ -8,97 +8,132 @@
     <title>Tenemos Descartables pero tenemos un problema - Error 404</title>
     <link rel="shortcut icon" href="./images/favicon-16x16.png" type="image/x-icon">
     <style>
-        #cajaMadre {
-  margin: 0;
-  padding: 0; }
+      #caja-madre {
+        margin: 0;
+        padding: 0; }
 
-.cajaUno {
-  width: 100vw;
-  height: 100vh;
-  background-color: #145DA0;
-  position: absolute; }
+      .caja-uno {
+        width: 100vw;
+        height: 100vh;
+        background-color: #145DA0;
+        position: absolute; }
 
-.cajaDos {
-  width: 80vw;
-  height: 80vh;
-  background-color: #0C2D48;
-  z-index: 2;
-  position: relative;
-  margin: 10vh 10vw;
-  overflow-y: visible; }
+      .caja-dos {
+        width: 80vw;
+        height: 80vh;
+        background-color: #0C2D48;
+        z-index: 2;
+        position: relative;
+        margin: 10vh 10vw;
+        overflow-y: visible; }
 
-.cajaTres {
-  width: 60vw;
-  height: 60vh;
-  background-color: #2E8BC0;
-  z-index: 3;
-  position: absolute;
-  margin: 10vh 10vw;
-  overflow-y: visible; }
+      .caja-tres {
+        width: 60vw;
+        height: 60vh;
+        background-color: #2E8BC0;
+        z-index: 3;
+        position: absolute;
+        margin: 10vh 10vw;
+        overflow-y: visible; }
 
-.cajaCuatro {
-  width: 10vw;
-  height: 100vh;
-  background-color: #B1D4E0;
-  z-index: 4;
-  position: fixed;
-  top: 0;
-  margin-left: 10vw; }
+      .caja-cuatro {
+        width: 10vw;
+        height: 100vh;
+        background-color: #B1D4E0;
+        z-index: 4;
+        position: fixed;
+        top: 0;
+        margin-left: 10vw; }
 
-.cajaCinco {
-  width: 35vw;
-  height: 50vh;
-  background-color: #89CFF0;
-  z-index: 5;
-  position: relative;
-  left: 12vw;
-  margin: 25vh auto; }
+      .caja-cinco {
+        width: 35vw;
+        height: 50vh;
+        background-color: #89CFF0;
+        z-index: 5;
+        position: relative;
+        left: 12vw;
+        margin: 25vh auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .caja-cinco p, .caja-cinco h1, .caja-cinco h2 {
+          color: #35454C;
+          text-align: center;
+          font-size: x-small; }
+        .caja-cinco a {
+          text-decoration: none;
+          color: #145DA0;
+          font-size: x-small;
+          text-align: center; }
+          .caja-cinco a:hover {
+            text-decoration: underline;
+            color: #35454C; }
 
-.cajaPrincipal {
-  width: 25vw;
-  height: 40vh;
-  margin: 5vh 5vw;
-  position: absolute;
-  z-index: 6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #AC8E69; }
-  .cajaPrincipal p, .cajaPrincipal h1, .cajaPrincipal h2 {
-    color: #35454C;
-    text-align: center;
-    font-size: x-small; }
-  .cajaPrincipal a {
-    text-decoration: none;
-    color: #145DA0;
-    font-size: x-small;
-    text-align: center; }
-    .cajaPrincipal a:hover {
-      text-decoration: underline;
-      color: #35454C; }
+      .caja-principal {
+        width: 25vw;
+        height: 40vh;
+        margin: 5vh 5vw;
+        position: absolute;
+        z-index: 6;
+        background-color: #AC8E69; }
+        .caja-principal p, .caja-principal h1, .caja-principal h2 {
+          color: #35454C;
+          text-align: center;
+          font-size: x-small; }
+        .caja-principal a {
+          text-decoration: none;
+          color: #145DA0;
+          font-size: x-small;
+          text-align: center; }
+          .caja-principal a:hover {
+            text-decoration: underline;
+            color: #35454C; }
 
-@media only screen and (min-width: 768px) {
-  .cajaPrincipal p, .cajaPrincipal h1, .cajaPrincipal h2, .cajaPrincipal a {
-    font-size: medium; } }
+      .caja-hidden {
+        display: block; }
 
-@media only screen and (min-width: 1020px) {
-  .cajaPrincipal p, .cajaPrincipal h1, .cajaPrincipal h2, .cajaPrincipal a {
-    font-size: x-large; } }
+      .caja-block {
+        display: none; }
+
+      @media only screen and (min-width: 300px) {
+        .caja-hidden {
+          display: none; }
+        .caja-block {
+          display: block;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+        .caja-principal p, .caja-principal h1, .caja-principal h2, .caja-principal a {
+          font-size: small; } }
+
+      @media only screen and (min-width: 768px) {
+        .caja-principal p, .caja-principal h1, .caja-principal h2, .caja-principal a {
+          font-size: medium; } }
+
+      @media only screen and (min-width: 1020px) {
+        .caja-principal p, .caja-principal h1, .caja-principal h2, .caja-principal a {
+          font-size: large; } }
+
     </style>
 </head>
-<body id="cajaMadre">
-    <div class="cajaUno">
-        <div class="cajaDos">
-            <div class="cajaTres">
-                <div class="cajaCuatro">
-                    <div class="cajaCinco">
-                        <div class="cajaPrincipal">
-                            <p>Lo Sentimos - Error 404</p>
-                            <h1>Lo Tenemos Todo en Descartables</h1>
-                            <h2>Area en contruccion</h2>
-                            <a href="./index.html" target="_blank" rel="noopener noreferrer">Volver a Pagina Inicial</a>
-                        </div>
+<body id="caja-madre">
+    <div class="caja-uno">
+        <div class="caja-dos">
+            <div class="caja-tres">
+                <div class="caja-cuatro">
+                    <div class="caja-cinco">
+                      <p class="caja-hidden">Lo Sentimos - Error 404</p>
+                      <h1 class="caja-hidden">Lo Tenemos Todo en Descartables</h1>
+                      <h2 class="caja-hidden">Area en contruccion</h2>
+                      <a href="./index.html" class="caja-hidden">Volver a Pagina Inicial</a>
+                      <div class="caja-principal caja-block">
+                        <p class="caja-block">Lo Sentimos - Error 404</p>
+                        <h1 class="caja-block">Lo Tenemos Todo en Descartables</h1>
+                        <h2 class="caja-block">Area en contruccion</h2>
+                        <a href="./index.html" class="caja-block">Volver a Pagina Inicial</a>
+                      </div>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,15 @@
 /* enlaces en header y footer */
 a.nav-link{
     font-family: $font__main;
-    color:$color__logo--final;
+    color: $color__logo--final;
     &:hover{
+        color: $color__logo--inicial;
         text-decoration: underline;
+    }
+    &:active{
+        color: $color__logo--final;
+    }
+    &:focus{
+        color: $color__logo--inicial;
     }
 }

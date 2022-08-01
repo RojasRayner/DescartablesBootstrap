@@ -9,17 +9,17 @@ $color:(
     'black':#35454C,
 );
 /* style para pagina en error404.html */
-#cajaMadre{
+#caja-madre{
     margin: 0;
     padding: 0;
 }
-.cajaUno{
+.caja-uno{
     width: 100vw;
     height: 100vh;
     background-color: map-get($map:$color , $key:'cajaUno');
     position: absolute;
 }
-.cajaDos{
+.caja-dos{
     width: 80vw;
     height: 80vh;
     background-color: map-get($map: $color, $key:'cajaDos');
@@ -28,7 +28,7 @@ $color:(
     margin: 10vh 10vw;
     overflow-y: visible;
 }
-.cajaTres{
+.caja-tres{
     width: 60vw;
     height: 60vh;
     background-color: map-get($map: $color, $key:'cajaTres');
@@ -37,7 +37,7 @@ $color:(
     margin: 10vh 10vw;
     overflow-y: visible;
 }
-.cajaCuatro{
+.caja-cuatro{
     width: 10vw;
     height: 100vh;
     background-color: map-get($map: $color, $key:'cajaCuatro');
@@ -47,7 +47,7 @@ $color:(
     margin-left: 10vw;
 
 }
-.cajaCinco{
+.caja-cinco{
     width: 35vw;
     height: 50vh;
     background-color: map-get($map: $color, $key:'cajaCinco');
@@ -55,17 +55,32 @@ $color:(
     position: relative;
     left: 12vw;
     margin: 25vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    p,h1,h2{
+        color: map-get($map: $color, $key:'black');
+        text-align: center;
+        font-size: x-small;
+    }
+    a{
+        text-decoration: none;
+        color: map-get($map: $color, $key:'cajaUno');
+        font-size: x-small;
+        text-align: center;
+        &:hover{
+            text-decoration: underline;
+            color: map-get($map: $color, $key:'black');
+        }
+    }
 }
-.cajaPrincipal{
+.caja-principal{
     width: 25vw;
     height: 40vh;
     margin: 5vh 5vw;
     position: absolute;
     z-index: 6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: map-get($map: $color, $key:'cajaSeis');
     p,h1,h2{
         color: map-get($map: $color, $key:'black');
@@ -83,17 +98,40 @@ $color:(
         }
     }
 }
-@media only screen and (min-width: 768px)  {
-    .cajaPrincipal{
+.caja-hidden{
+    display: block;
+}
+.caja-block{
+    display: none;
+}
+@media only screen and (min-width: 300px)  {
+    .caja-hidden{
+        display: none;
+    }
+    .caja-block{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .caja-principal{
         p,h1,h2,a{
-            font-size:medium
+            font-size: small;
+        }
+    }
+}
+@media only screen and (min-width: 768px)  {
+    .caja-principal{
+        p,h1,h2,a{
+            font-size: medium;
         }
     }
 }
 @media only screen and (min-width:1020px){
-    .cajaPrincipal{
+    .caja-principal{
         p,h1,h2,a{
-            font-size: x-large;
+            font-size: large;
         }
     }
     

@@ -10,7 +10,7 @@ ul.navbar-nav{
         }
     }
 }
-body{
+body, .color-de-animacion{
     background-color:$background;
 }
 .color-de-fondo{
@@ -19,26 +19,65 @@ body{
 .color-inicio{
     @include color__font($color__logo--inicial,$font__main);
 }
+.color-inter{
+    @include color__font($color__logo--inter,$font__main);
+}
 .color-final{
     @include color__font($color__logo--final,$font__main);
 }
+.color-fondo{
+    background-color: $color__logo--final;
+}
+.btn-primary:focus{
+    background-color: $color__logo--final !important;
+}
+.btn-primary:hover{
+    background-color: $color__logo--inicial !important;
+}
+.btn-primary:active, .btn-primary:visited {
+    background-color: $color__logo--final !important;
+}
 /* para la union del sombra svg, junto con el header y footer */
 .top-curve{
-    transform: translateY(-8px);
+    transform: translateY(-5px);
     @include size__image(100vw,6.775rem);
 }
 .bottom-curve{
     transform: translateY(90px);
     @include size__image(100vw,6.775rem);
 }
-
-/* estylo para carousel */
-.color-fondo{
-    background-color: $color__logo--final;
+/* conocenos.html */
+#panel-color-mision.accordion-button{
+    color: $color__logo--final;
+    &:focus{
+        color: $color__logo--inicial;
+    }
+    &.collapsed::after {
+        color: $color__logo--inicial;
+        background: blue;
+    }
+    &.collapsed::before{
+        color: $color__logo--inicial;
+        background: blue;
+    }
+}
+#panel-color-vision.accordion-button{
+    color: $color__logo--final;
+    &:focus{
+        color: $color__logo--inicial;
+    }
+    &.collapsed::after {
+        color: $color__logo--inicial;
+        background: blue;
+    }
+    &.collapsed::before{
+        color: $color__logo--inicial;
+        background: blue;
+    }
 }
 /* comprar.html */
 a.btn:hover, button.btn:hover{
-    background-color: $color__logo--inicial;
+    background-color: $color__logo--inicial !important;
     cursor: pointer;
 }
 /* Galeria.html */
@@ -72,43 +111,51 @@ a.btn:hover, button.btn:hover{
 }
 /* imagen en galeria */
 .card-imagen{
-    @include size__image(48vw,auto);
+    @include size__image(45vw,auto);
 }
-@media only screen and (min-width: 280px) {
+@media only screen and (min-width: 200px) {
     .card-imagen{
-        width: 45vw;
+        width: 35vw;
     }
     .bottom-curve{
-        transform: translateY(82px);
+        transform: translateY(84px);
     }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 576px) {
     .card-imagen{
-        width: 30vw;
+        width: 28vw;
     }
     .bottom-curve{
-        transform: translateY(58px);
+        transform: translateY(56px);
     }
 }
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 768px) {
     .card-imagen{
-        width: 25vw;
+        width: 22vw;
     }
     .bottom-curve{
         transform: translateY(37px);
     }
 }
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 992px) {
     .card-imagen{
-        width: 18vw;
+        width: 12vw;
     }
     .bottom-curve{
-        transform: translateY(16px);
+        transform: translateY(12px);
     }
 }
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1200px) {
     .card-imagen{
-        width: 15vw;
+        width: 14vw;
+    }
+    .bottom-curve{
+        transform: translateY(6px);
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .card-imagen{
+        width: 12vw;
     }
     .bottom-curve{
         transform: translateY(6px);
