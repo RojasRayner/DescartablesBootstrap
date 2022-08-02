@@ -1,6 +1,6 @@
 .navbar-brand{
     img{
-        @include size__image(15vw,15vh);
+        @include size__image(30vw,30vh);
     }
 }
 ul.navbar-nav{
@@ -47,6 +47,9 @@ body, .color-de-animacion{
     @include size__image(100vw,6.775rem);
 }
 /* conocenos.html */
+.imagen-tienda{
+    @include size__image(70vw,auto);
+}
 #panel-color-mision.accordion-button{
     color: $color__logo--final;
     &:focus{
@@ -120,6 +123,9 @@ a.btn:hover, button.btn:hover{
     .bottom-curve{
         transform: translateY(84px);
     }
+    .imagen-tienda{
+        width: 45vw;
+    }
 }
 @media only screen and (min-width: 576px) {
     .card-imagen{
@@ -128,6 +134,14 @@ a.btn:hover, button.btn:hover{
     .bottom-curve{
         transform: translateY(56px);
     }
+    .navbar-brand{
+        img{
+            @include size__image(15vw,15vh);
+        }
+    }
+    .imagen-tienda{
+        width: 30vw;
+    }
 }
 @media only screen and (min-width: 768px) {
     .card-imagen{
@@ -135,6 +149,9 @@ a.btn:hover, button.btn:hover{
     }
     .bottom-curve{
         transform: translateY(37px);
+    }
+    .imagen-tienda{
+        width: 20vw;
     }
 }
 @media only screen and (min-width: 992px) {

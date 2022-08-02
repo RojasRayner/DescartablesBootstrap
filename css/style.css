@@ -22,8 +22,8 @@ a.nav-link, ul.navbar-nav li a {
     color: #ff4500; }
 
 .navbar-brand img {
-  width: 15vw;
-  height: 15vh; }
+  width: 30vw;
+  height: 30vh; }
 
 body, .color-de-animacion {
   background-color: #f3f0f0; }
@@ -67,6 +67,10 @@ body, .color-de-animacion {
   height: 6.775rem; }
 
 /* conocenos.html */
+.imagen-tienda {
+  width: 70vw;
+  height: auto; }
+
 #panel-color-mision.accordion-button {
   color: #0000ff; }
   #panel-color-mision.accordion-button:focus {
@@ -129,19 +133,28 @@ a.btn:hover, button.btn:hover {
   .card-imagen {
     width: 35vw; }
   .bottom-curve {
-    transform: translateY(84px); } }
+    transform: translateY(84px); }
+  .imagen-tienda {
+    width: 45vw; } }
 
 @media only screen and (min-width: 576px) {
   .card-imagen {
     width: 28vw; }
   .bottom-curve {
-    transform: translateY(56px); } }
+    transform: translateY(56px); }
+  .navbar-brand img {
+    width: 15vw;
+    height: 15vh; }
+  .imagen-tienda {
+    width: 30vw; } }
 
 @media only screen and (min-width: 768px) {
   .card-imagen {
     width: 22vw; }
   .bottom-curve {
-    transform: translateY(37px); } }
+    transform: translateY(37px); }
+  .imagen-tienda {
+    width: 20vw; } }
 
 @media only screen and (min-width: 992px) {
   .card-imagen {
