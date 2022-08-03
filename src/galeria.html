@@ -63,14 +63,34 @@
         </div>
     </header>
     <main>
-        <div class="container-fluid d-flex justify-content-center flex-column flex-lg-row">
-            <div class="row flex-fill">
+        <div class="container-fluid ">
+            <div class="row d-flex justify-content-center flex-column flex-lg-row align-items-center pt-5">
                 <div class="col-12">
                     <div class="d-flex align-items-center justify-content-center text-center flex-column flex-sm-row">
                         <h1 class="color-inicio">Galeria<span> de Productos de </span>Descartables</h1>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+            </div>
+            <div class="row d-flex justify-content-center flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-sm-10 col-md-6">
+                    <form class="d-flex" role="search" action="../error404.html">
+                        <label for="exampleDataList" class="form-label"></label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Busca tu producto..." aria-label="Ingresa el nombre del producto">
+                        <datalist id="datalistOptions">
+                            <option value="Bolsas Kraft">
+                            <option value="Bandejas">
+                            <option value="Rodales">
+                            <option value="Vasos">
+                            <option value="Papel">
+                            <option value="Cajas">
+                            <option value="Servilletas">            
+                        </datalist>
+                        <button class="btn btn-outline-success text-white color-fondo btn-lg" type="submit" aria-label="Buscar producto">Buscar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center flex-column flex-lg-row align-items-center"> 
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bandeja.jpg" alt="Bandeja plateada con bordes. Medidas 29cm x 37cm" class="img-fluid">
@@ -80,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5  align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bases-onduladas.jpg" alt="Bases onduladas en color dorado de 28cm o en Color plateado de 32cm." class="img-fluid">
@@ -90,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/vasos-batidos.jpg" alt="Vaso para batidos milshake a $10. Tapa plana 400ml" class="img-fluid">
@@ -101,7 +121,7 @@
                     </div>
                 </div>
             
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/burbuja.jpg" alt="Nilon burbuja a $39 el metro de 1 metro de ancho." class="img-fluid">
@@ -111,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/campana.jpg" alt="Campana baja redonda 28cm x 8cm a $59" class="img-fluid">
@@ -122,7 +142,7 @@
                     </div>
                 </div>
             
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/papel-pino.jpg" alt="Papel pino de 5 kg aproximadamente a $112 el kilo. Rollo de 50cm de ancho." class="img-fluid">
@@ -132,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/papel-sulfito.jpg" alt="Papel sulfito a $151 el kilo. 25 cm de ancho. Rollo de 500 metros." class="img-fluid">
@@ -143,7 +163,7 @@
                     </div>
                 </div>
             
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/vasos-descartables.jpg" alt="Vasos descartables x 100 unidades. 110ml a $109. 180ml a $96. 300ml a $119. 500ml a $265." class="img-fluid">
@@ -153,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/vasos-tapa-domo.jpg" alt="Vasos descartables con tapa tipo domo. 266ml a $11 para postres." class="img-fluid">
@@ -163,7 +183,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bandeja-espuma-bandeja-texturizada.jpg" alt="Bandeja de espuma liviana texturizada, Medidas 35 x 25 x 2,5 a $17,50. Codigo KM 650." class="img-fluid">
@@ -173,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bandeja-espuma-c-borde.jpg" alt="Bandeja de espuma con borde de 30cm de diámetro a $10,40" class="img-fluid">
@@ -183,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bandeja-espuma-c2.jpg" alt="Bandeja de espuma rectangular, Medidas 21 x 14 x 1.8 a $2,10." class="img-fluid">
@@ -193,7 +213,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bandeja-espuma.jpg" alt="Bandeja de espuma C3, Medidas 23 x 18,5 x 1,8 a $2,80." class="img-fluid">
@@ -203,7 +223,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-apaisada-asa.jpg" alt="Bolsa de papel mediana apaisada. Medidas 35 x 30 x 14. a $24." class="img-fluid">
@@ -213,7 +233,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-bizcochos.jpg" alt="Bolsa kraft bizcochos para 1/2 kilo. Medidas 24 x 15 x 8. a $2,25." class="img-fluid">
@@ -223,7 +243,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-blancas.jpg" alt="Bolsa kraft souvenir blancas. Medidas 27,5 x 15 x 9,5. a $4,90." class="img-fluid">
@@ -233,7 +253,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-botella-asa.jpg" alt="Bolsa de papel para botellas. Medidas 42 x 18 x 10. a $29." class="img-fluid">
@@ -243,7 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-churros.jpg" alt="Bolsa kraft churros medianas. Medidas 22 x 12 x 7. a $1,40." class="img-fluid">
@@ -253,7 +273,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-extragrande-asa.jpg" alt="Bolsa de papel kraft extragrande. Medidas 36 x 42 x 21,5. a $30." class="img-fluid">
@@ -263,7 +283,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-grades.jpg" alt="Bolsa kraft grande. Medidas 30 x 28 x 16. a $7,90." class="img-fluid">
@@ -273,7 +293,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-grande-blanca-asa.jpg" alt="Bolsa de papel grande blanca. Medidas 29 x 31 x 18. a $28." class="img-fluid">
@@ -283,7 +303,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-grandes-asa.jpg" alt="Bolsa de papel kraft grande con asa. Medidas 31 x 19 x 18. a $24." class="img-fluid">
@@ -293,7 +313,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-mediana-blanca-asa.jpg" alt="Bolsa de papel kraft mediana blanca con asa. Medidas 35 x 26 x 12. a $24." class="img-fluid">
@@ -303,7 +323,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-medianas.jpg" alt="Bolsa de papel kraft grande. Medidas 28 x 40 x 16. a $8,90." class="img-fluid">
@@ -313,7 +333,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-mini-asa.jpg" alt="Bolsa de papel kraft mini. Medidas 15 x 21 x 8. a $13." class="img-fluid">
@@ -323,7 +343,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-pequena-asa.jpg" alt="Bolsa de papel kraft pequeña. Medidas 18 x 26 x 10. a $16." class="img-fluid">
@@ -333,7 +353,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/bolsas-kraft-pequenas.jpg" alt="Bolsa de papel kraft pequeñas. Medidas 17 x 12 x 7. a $1." class="img-fluid">
@@ -343,7 +363,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/caja-rectangular.jpg" alt="Caja rectangular con visor. Medidas 20 x 8 x 7,5. a $19,50." class="img-fluid">
@@ -353,7 +373,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/caja-rojo-vizor.jpg" alt="Caja roja con visor. Medidas 14 x 14 x 5. a $23." class="img-fluid">
@@ -363,7 +383,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/cajas-para-masas.jpg" alt="Caja para masas 1/2 kilo. Medidas 23 x 18 x 6,5. a $18." class="img-fluid">
@@ -373,7 +393,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/cubiertos-descartables.jpg" alt="Cubiertos descartables a $1,50 cada uno. 50 unidades por $60." class="img-fluid">
@@ -383,7 +403,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/cubiertos-madera.jpg" alt="Cubiertos descartables en madera de 15 cm, pack de 25 unidades del mismo cubierto a $109." class="img-fluid">
@@ -393,7 +413,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/cucharitas-helado-blancas.jpg" alt="Cucharitas para helado blancas pack de 50 unidades a $30." class="img-fluid">
@@ -403,7 +423,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/estuche-espuma-tapa-bisagra.jpg" alt="Estuche de espuma con tapa de visagra. Medidas 23 x 16 x 7,5 a $8,30." class="img-fluid">
@@ -413,7 +433,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/estuche-espuma.jpg" alt="Estuche de espuma con tapa de visagra. Medidas 20 x 20 x 7 a $10." class="img-fluid">
@@ -423,7 +443,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/marmita-espuma-tapa-separada.jpg" alt="Marmita de espuma con tapa separada de 750ml a $8,80." class="img-fluid">
@@ -433,7 +453,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/pincho-sombrilla-tragos.jpg" alt="Pinchos sombrilla para tragos, 8 unidades a $25." class="img-fluid">
@@ -443,7 +463,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/plato-copetinero-tapa.jpg" alt="Plato copetinero con tapa 6 divisiones. Medidas 27 x 4, a $37." class="img-fluid">
@@ -453,7 +473,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/platos-colores.jpg" alt="Plato descartables de colores pack de 10 unidades de 15 cm de diametro. Colores a elección, a $35." class="img-fluid">
@@ -463,7 +483,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/precinto-alambre-forrado-plastico.jpg" alt="Precinto de alambre forrado en plastico para cierre pack de 50 unidades, a $45." class="img-fluid">
@@ -473,7 +493,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/rodales-colores.jpg" alt="Rodales de colores 9 cm de diametro, a $1,50." class="img-fluid">
@@ -483,7 +503,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/servilletas-colores.jpg" alt="Servilletas de colores 20 unidades. Medidas 33 x 33 cm a $35." class="img-fluid">
@@ -493,7 +513,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4">
                     <div class="card position-relative my-5 align-items-center py-2">
                         <div class="card-imagen">
                             <img src="../images/productos/servilletas-varios-colores.jpg" alt="Servilletas de varios colores 20 unidades. Medidas 25 x 25 cm a $25." class="img-fluid">
